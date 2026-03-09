@@ -1,0 +1,29 @@
+package ex7;
+import java.util.Scanner;
+public class Ex7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite seu nome: ");
+        String nome = sc.nextLine();
+        System.out.print("Digite seu salario atual: ");
+        double atualsalario = sc.nextDouble();
+         sc.nextLine(); // limpa o buffer
+        System.out.println("Voce trabalha na empresa a mais de 5 anos?(sim/nao)");
+        String decisao = sc.nextLine();
+        double novosalario1 = atualsalario * 1.20;
+        double novosalario2 = atualsalario * 1.10;
+        
+        if (decisao.equals("sim") || decisao.equals("SIM")){            
+            System.out.printf("%s voce recebeu um aumento salarial de 20%%. Agora seu salario e: %.2f", nome, novosalario1);
+        }
+        else if (decisao.equals("nao") || decisao.equals("NAO")){
+            System.out.printf("%s voce recebeu um aumento salarial de 20%%. Agora seu salario e: %.2f", nome, novosalario1);       
+        }
+       else{
+            System.out.println("Resposta invalida.");
+        }
+        sc.close();
+    }
+    
+}
