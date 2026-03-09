@@ -1,0 +1,19 @@
+package eex5;
+import java.util.Scanner;
+public class Eex5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um numero: ");
+        int numero = sc.nextInt();
+        
+        if (numero>=50 && numero<=100){
+            System.out.print("O numero pertence ao intervalo.");
+        }
+        else {
+            System.out.print("O numero nao pertence ao intervalo.");
+        }
+        
+    }
+    
+}
