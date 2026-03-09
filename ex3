@@ -1,0 +1,26 @@
+package ex4;
+import java.util.Scanner;
+public class Ex4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite um numero inteiro:");
+        int n1 = sc.nextInt();
+        System.out.print("Digite um numero inteiro:");
+        int n2 = sc.nextInt();
+        
+        if (n1==n2){
+            System.out.print("Numeros iguais.");
+        }
+        else if (n1 > n2){
+            int dif1 = n1 - n2;
+            System.out.print(dif1);
+        }       
+        else {
+            int dif2 = n2 - n1;
+            System.out.print(dif2);
+        }
+        sc.close();
+    }
+    
+}
