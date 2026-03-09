@@ -1,0 +1,21 @@
+package ex5;
+import java.util.Scanner;
+public class Ex5 {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite o primeiro numero: ");
+        int n1 = sc.nextInt();
+        System.out.print("Digite o segundo numero: ");
+        int n2 = sc.nextInt();
+        
+        if (n1>n2){
+            System.out.print("Ordem decrescente:"+ n1 +"," + n2);
+        }
+        else {
+            System.out.print("Ordem decrescente:"+ n2 +"," + n1);
+        }
+        sc.close();
+    }
+    
+}
