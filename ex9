@@ -1,0 +1,23 @@
+package eex9;
+import java.util.Scanner;
+public class Eex9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite seu salario: ");
+        double salario = sc.nextDouble();
+        System.out.println("Qual valor da prestacao quer retirar?(obs:maximo 30%).");
+        double prestacao = sc.nextDouble();
+        
+        if (prestacao > salario * 0.30){
+            System.out.print("Valor invalido, excedeu a cota.");
+        }
+        else {
+            System.out.println("A retirada da sua prestacao foi bem sucedida");
+            System.out.println("Valor do salario bruto: "+ salario);
+            System.out.println("Valor da prestacao: "+ prestacao);
+        }
+        
+    }
+    
+}
