@@ -1,0 +1,28 @@
+package eex12;
+import java.util.Scanner;
+public class Eex12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite seu salario:");
+        double salario = sc.nextDouble();
+        double sa20 = (salario * 0.20);
+        double sa25 = (salario * 0.25);
+        double sa30 = (salario * 0.30);
+        
+        if (salario <= 600){
+            System.out.print("Isento.");
+        }
+        else if (salario <= 1200){
+        System.out.printf("Seu INSS e de 20%%: %.2f%n", sa20);
+        }
+        else if (salario <= 2000){
+            System.out.printf("Seu INSS e de 25%%: %.2f%n", sa25);
+        }
+        else {
+            System.out.printf("Seu INSS e de 30%%: %.2f%n", sa30);
+        }
+        sc.close();
+    }
+    
+}
