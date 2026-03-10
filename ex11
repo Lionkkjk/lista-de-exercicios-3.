@@ -1,0 +1,31 @@
+package eex11;
+import java.util.Scanner;
+public class Eex11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Ola nadador, digite sua idade: ");
+        int idade = sc.nextInt();
+        
+        if (idade < 5){
+            System.out.print("Voce nao tem idade o suficiente.");
+        }
+        else if(idade <= 7 ){
+            System.out.print("Sua categoria e infantilA!");
+        }
+        else if (idade <= 10){
+            System.out.print("Sua categoria e infantilB!");
+        }
+        else if (idade <=13){
+            System.out.print("Sua catgoria e juvenilA!");
+        }
+        else if (idade <= 17){
+            System.out.print("Sua categoria e juvenilB");
+        }
+        else {
+            System.out.print("Sua categoria e Senior!");
+        }
+        sc.close();
+    }
+    
+}
